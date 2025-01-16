@@ -8,14 +8,19 @@ The user is able to:
 The code generates a json file in the desktop named as tracker.json which stores the details of the task in the format :- id , description, status, createdAt and updatedAt
 
 Below are the commands that can be utilised:
-  task-cli.py add <task description>
-  task-cli.py update <task id> <updated task description>
-  task-cli.py delete <task id>
-  task-cli.py mark-in-progress <task id>
-  task-cli.py mark-done <task id>
-  task-cli.py list
-  task-cli.py list done
-  task-cli.py list todo
-  task-cli.py list in-progress
+
+    task-cli.py add <task description> # Creates a task with the task description
+    
+    task-cli.py update <task id> <updated task description> # Updates the task description for the first task with task id mentioned
+    
+    task-cli.py delete <task id> # Deletes the first task with task id mentioned
+    
+    task-cli.py mark-in-progress <task id> # Marks the status as in-progress for the first task with task id mentioned
+    task-cli.py mark-done <task id> # Marks the status as done for the first task with task id mentioned
+    
+    task-cli.py list # Displays all the tasks
+    task-cli.py list done # Displays all the tasks with status done
+    task-cli.py list todo # Displays all the tasks with status todo
+    task-cli.py list in-progress # Displays all the tasks with status in-progress
 
   Project Recieved from : https://roadmap.sh/projects/task-tracker
